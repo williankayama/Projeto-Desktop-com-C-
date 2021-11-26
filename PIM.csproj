@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50D45481-B909-481D-A374-0B1D9758AAAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PIM</RootNamespace>
+    <AssemblyName>PIM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBPIMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPIMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastrarFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastrarFunc.Designer.cs">
+      <DependentUpon>FrmCadastrarFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastrarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastrarReserva.Designer.cs">
+      <DependentUpon>FrmCadastrarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarCheckIn.Designer.cs">
+      <DependentUpon>FrmConsultarCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarCheckOut.Designer.cs">
+      <DependentUpon>FrmConsultarCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarFunc.Designer.cs">
+      <DependentUpon>FrmConsultarFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarReserva.Designer.cs">
+      <DependentUpon>FrmConsultarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCriarQuartos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCriarQuartos.Designer.cs">
+      <DependentUpon>FrmCriarQuartos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteCheckIn.Designer.cs">
+      <DependentUpon>FrmDeleteCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteCheckOut.Designer.cs">
+      <DependentUpon>FrmDeleteCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteFunc.Designer.cs">
+      <DependentUpon>FrmDeleteFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteQuarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteQuarto.Designer.cs">
+      <DependentUpon>FrmDeleteQuarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteReserva.Designer.cs">
+      <DependentUpon>FrmDeleteReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarCheckOut.Designer.cs">
+      <DependentUpon>FrmEditarCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarFunc.Designer.cs">
+      <DependentUpon>FrmEditarFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarQuartos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarQuartos.Designer.cs">
+      <DependentUpon>FrmEditarQuartos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarReserva.Designer.cs">
+      <DependentUpon>FrmEditarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCheckIn.Designer.cs">
+      <DependentUpon>FrmRegistrarCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarCheckIn.Designer.cs">
+      <DependentUpon>FrmEditarCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCheckOut.Designer.cs">
+      <DependentUpon>FrmRegistrarCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCadastrarFunc.resx">
+      <DependentUpon>FrmCadastrarFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastrarReserva.resx">
+      <DependentUpon>FrmCadastrarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarCheckIn.resx">
+      <DependentUpon>FrmConsultarCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarCheckOut.resx">
+      <DependentUpon>FrmConsultarCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarFunc.resx">
+      <DependentUpon>FrmConsultarFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarReserva.resx">
+      <DependentUpon>FrmConsultarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCriarQuartos.resx">
+      <DependentUpon>FrmCriarQuartos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteCheckIn.resx">
+      <DependentUpon>FrmDeleteCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteCheckOut.resx">
+      <DependentUpon>FrmDeleteCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteFunc.resx">
+      <DependentUpon>FrmDeleteFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteQuarto.resx">
+      <DependentUpon>FrmDeleteQuarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteReserva.resx">
+      <DependentUpon>FrmDeleteReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarCheckOut.resx">
+      <DependentUpon>FrmEditarCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarFunc.resx">
+      <DependentUpon>FrmEditarFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarQuartos.resx">
+      <DependentUpon>FrmEditarQuartos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarReserva.resx">
+      <DependentUpon>FrmEditarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCheckIn.resx">
+      <DependentUpon>FrmRegistrarCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarCheckIn.resx">
+      <DependentUpon>FrmEditarCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCheckOut.resx">
+      <DependentUpon>FrmRegistrarCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DBPIMDataSet.xsc">
+      <DependentUpon>DBPIMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBPIMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBPIMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBPIMDataSet.xss">
+      <DependentUpon>DBPIMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
